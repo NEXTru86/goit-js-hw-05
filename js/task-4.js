@@ -8,19 +8,16 @@ class StringBuilder {
   }
 
     append(str) {
-        this.str = str;
-        this._value = this._value + this.str;
+        this._value = this._value + str;
     };
 
     prepend(str) {
-        this.str = str;
-        this._value = this.str + this._value;
+        this._value = str + this._value;
     };
 
 
     pad(str) {
-        this.str = str;
-        this._value = this.str + this._value + this.str;
+        this._value = str + this._value + str;
     };
 }
 
